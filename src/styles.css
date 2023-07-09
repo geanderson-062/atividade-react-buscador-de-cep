@@ -1,103 +1,91 @@
-
-.container{ /*centralizando texto e componemtes*/
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(#121212, #212b46);
+.container{
+    height: 100vh; /* Define a altura do container como 100% da altura da viewport */
+    display: flex; /* Define o container como um flex container */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    flex-direction: column; /* Define a direção dos elementos como coluna */
+    background: linear-gradient(#121212, #212b46); /* Define um gradiente de fundo */
 }
 
-.title{ /* titulo */
-    font-size: 85px;
-    color: #fff; 
-    animation: flipTitle 2s;
+.title{
+    font-size: 85px; /* Define o tamanho da fonte do título */
+    color: #fff; /* Define a cor do texto como branco */
+    animation: flipTitle 2s; /* Adiciona uma animação chamada flipTitle com duração de 2 segundos */
 }
 
-@keyframes flipTitle {
-    
+@keyframes flipTitle { /* Define a animação flipTitle */
     from{
-        transform: rotateX(90deg);
+        transform: rotateX(90deg); /* Define a transformação inicial da animação */
     }
     to { 
-        transform: rotateX(0deg);
+        transform: rotateX(0deg); /* Define a transformação final da animação */
     }
 }
 
 .containerInput{
-
-    background-color: rgba (255, 255, 255, 0.5);
-    padding: 15px;
-    margin: 34px 0;
-    display: flex;
-    border-radius: 8px;
-    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba (255, 255, 255, 0.5); /* Define a cor de fundo do containerInput */
+    padding: 15px; /* Adiciona preenchimento interno ao containerInput */
+    margin: 34px 0; /* Define margem superior e inferior do containerInput */
+    display: flex; /* Define o containerInput como um flex container */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao containerInput */
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao containerInput */
 }
 
 .containerInput input{
-    background-color: transparent;
-    border:0;
-    font-size: 20px;
-    color: #fff;
-    outline: none;
-    margin-right: 8px;
+    background-color: transparent; /* Define a cor de fundo do input como transparente */
+    border:0; /* Remove a borda do input */
+    font-size: 20px; /* Define o tamanho da fonte do input */
+    color: #fff; /* Define a cor do texto do input como branco */
+    outline: none; /* Remove o contorno do input quando está em foco */
+    margin-right: 8px; /* Define uma margem direita para o input */
 }
 
 .containerInput input::placeholder{
-    color: #f1f1f1;
+    color: #f1f1f1; /* Define a cor do texto do placeholder do input */
 }
 
 .buttonSearch{
-
-    background-color: transparent;
-    border: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s;
+    background-color: transparent; /* Define a cor de fundo do botão como transparente */
+    border: 0; /* Remove a borda do botão */
+    display: flex; /* Define o botão como um flex container */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    transition: transform 0.5s; /* Adiciona uma transição de transformação de 0.5 segundos */
 }
 
 .buttonSearch:hover{
-    transform: scale(1.2);
+    transform: scale(1.2); /* Adiciona um efeito de escala no botão ao passar o mouse */
 }
 
 .main{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    width: 500px;
-    border-radius: 8px;
-
+    display: flex; /* Define o main como um flex container */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    flex-direction: column; /* Define a direção dos elementos como coluna */
+    background-color: #fff; /* Define a cor de fundo do main */
+    width: 500px; /* Define a largura do main */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao main */
 }
 
 .main h2{
-    margin: 16px 0 ; 
-    font-size: 39px;
+    margin: 16px 0 ; /* Define margem superior e inferior do h2 */
+    font-size: 39px; /* Define o tamanho da fonte do h2 */
 }
 
 .main span{
-
-    margin-bottom: 16px;
-    font-weight: bold;
-
+    margin-bottom: 16px; /* Define margem inferior para o span */
+    font-weight: bold; /* Define o peso da fonte do span como negrito */
 }
 
-@media (max-widht: 620px){
-
+@media (max-widht: 620px){ /* Define um estilo específico para telas com largura máxima de 620px */
     .title{
-        font-size: 60px;
+        font-size: 60px; /* Altera o tamanho da fonte do título para 60px */
     }
-
     .main h2{
-        font-size: 28px;
+        font-size: 28px; /* Altera o tamanho da fonte do h2 para 28px */
     }
-
     .main {
-        width: 80%;
-        min-height: 250px;
+        width: 80%; /* Altera a largura do main para 80% */
+        min-height: 250px; /* Define uma altura mínima para o main */
     }
 }
-    
