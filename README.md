@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Buscador de CEP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um buscador de CEP simples, construído com React. Ele permite que os usuários digitem um CEP e recebam as informações correspondentes, como logradouro, bairro, localidade e UF.
 
-## Available Scripts
+## Como executar o projeto
 
-In the project directory, you can run:
+1. Clone este repositório em sua máquina local.
+2. Certifique-se de ter o Node.js instalado em sua máquina.
+3. Abra o terminal na pasta raiz do projeto.
+4. Execute o comando `npm install` para instalar as dependências necessárias.
+5. Após a instalação, execute o comando `npm start` para iniciar o aplicativo.
+6. O aplicativo será executado no modo de desenvolvimento em [http://localhost:3000](http://localhost:3000) em seu navegador.
 
-### `npm start`
+## Recursos utilizados
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React: Uma biblioteca JavaScript para criar interfaces de usuário.
+- react-icons: Uma biblioteca de ícones para React.
+- API de CEP: O aplicativo faz uso de uma API para obter os dados correspondentes ao CEP fornecido. Certifique-se de verificar a documentação dessa API para entender seus limites de uso.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- Digitar um CEP no campo de entrada.
+- Clicar no botão de pesquisa para obter as informações correspondentes.
+- Exibir as informações do CEP (logradouro, bairro, localidade, UF) se o CEP for encontrado.
+- Exibir uma mensagem de erro caso ocorra algum problema durante a busca.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contribuição
 
-### `npm run build`
+Contribuições são bem-vindas! Se você encontrar algum problema, tiver sugestões de melhorias ou quiser adicionar novos recursos, sinta-se à vontade para abrir uma issue ou enviar uma pull request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Créditos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este projeto foi desenvolvido por [Sujeito programador](https://www.youtube.com/@Sujeitoprogramador), você pode conferir mais conteúdos e tutoriais relacionados a desenvolvimento web no [Sujeito programador](https://www.youtube.com/watch?v=oy4cbqE1_qc).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esperamos que este buscador de CEP seja útil para você! Caso tenha alguma dúvida, entre em contato ou consulte a documentação oficial do React para obter mais informações.
